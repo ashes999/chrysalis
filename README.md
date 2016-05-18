@@ -11,3 +11,8 @@ Chrysalis allows you to write professional-grade Windows installers using plain 
 # Forms
 
 - **WelcomeForm:** shows a "welcome to the installer wizard" form with next/cancel buttons.
+
+# Config
+
+Chrysalis includes a static, global `Config` class which lets you specify global configuration (such as the default form width/height).
+
