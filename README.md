@@ -1,4 +1,5 @@
 # Chrysalis ![logo](icon.png)
+![build status](https://travis-ci.org/ashes999/chrysalis.svg)
 
 Chrysalis allows you to write professional-grade Windows installers using plain C# code.
 
