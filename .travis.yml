@@ -6,6 +6,7 @@ install:
 mono:
   - latest
 script:
-  - export DISPLAY=:0.0
+  - export MONO_MWF_USE_QUARTZ_BACKEND=1
+  - export MONO_MWF_USE_CARBON_BACKEND=1
   - xbuild /p:Configuration=Release Chrysalis.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Chrysalis.Core.UnitTests/bin/Release/Chrysalis.Core.UnitTests.dll
