@@ -6,5 +6,6 @@ install:
 mono:
   - latest
 script:
+  - export DISPLAY=:0.0
   - xbuild /p:Configuration=Release Chrysalis.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Chrysalis.Core.UnitTests/bin/Release/Chrysalis.Core.UnitTests.dll
